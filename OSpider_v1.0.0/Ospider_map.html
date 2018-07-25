@@ -1,0 +1,87 @@
+<!DOCTYPE html>  
+欢迎关注OGIScience,意见反馈1159331173@qq.com
+<html>  
+<head>  
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />  
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />  
+    <style type="text/css">  
+        body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}  
+        #panel{  
+            position:absolute;  
+            left:5px;  
+            top:5px;  
+        }  
+        #result{  
+            background: #fff;  
+            padding:5px;  
+        }  
+    </style>  
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>  
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=1XjLLEhZhQNUzd93EjU5nOGQ"></script>  
+    <title>Ospider_行政区坐标拾取器</title>  
+</head>  
+<body>  
+    <div id="allmap"></div>  
+    <div id="panel">  
+        <div>  
+        <input type="text" id="keyword" value="武汉市"/>  
+        <input type="button" value="查看范围" id="commitBtn"/>  
+        边界经纬度坐标  
+        <textarea id="pathStr"></textarea>  
+        边界墨卡托坐标  
+        <textarea id="pathMc"></textarea>  
+        </div>  
+        <div id="result">  
+        </div>  
+    </div>  
+</body>  
+</html>  
+<script type="text/javascript">  
+    // 百度地图API功能  
+    var map = new BMap.Map("allmap");  
+    map.centerAndZoom(new BMap.Point(116.403765, 39.914850), 5);  
+    map.enableScrollWheelZoom();  
+    var mercatorProjection = map.getMapType().getProjection();  
+    $("#commitBtn").bind('click', function(){  
+        getBoundary($("#keyword").val());  
+    });  
+    function getBoundary(city){         
+        var bdary = new BMap.Boundary();  
+        bdary.get(city, function(rs){       //获取行政区域  
+            map.clearOverlays();        //清除地图覆盖物         
+            var count = rs.boundaries.length; //行政区域的点有多少个  
+            if (count === 0) {  
+                alert('未能获取当前输入行政区域');  
+                return ;  
+            }  
+            var pointArray = [];  
+            for (var i = 0; i < count; i++) {  
+                var ply = new BMap.Polygon(rs.boundaries[i], {strokeWeight: 2, strokeColor: "#ff0000"}); //建立多边形覆盖物  
+                map.addOverlay(ply);  //添加覆盖物  
+                pointArray = pointArray.concat(ply.getPath());  
+            }      
+            var pathStr = "";  
+            var pathMc = "";  
+            for (var i = 0; i < pointArray.length; i++) {  
+
+                var mc = mercatorProjection.lngLatToPoint(pointArray[i]);  
+                pathStr += pointArray[i].lng + "," + pointArray[i].lat + ";";  
+                pathMc += mc.x + "," + mc.y + ";";  
+            }  
+            $('#pathStr').html(pathStr);  
+            $('#pathMc').html(pathMc);  
+            var ply = new BMap.Polygon(pointArray , {strokeWeight: 2, strokeColor: "#ff0000"}); //建立多边形覆盖物  
+            var bounds = ply.getBounds();  
+            var ne = bounds.getNorthEast();  
+            var sw = bounds.getSouthWest();  
+            var neMc = mercatorProjection.lngLatToPoint(ne);  
+            var swMc = mercatorProjection.lngLatToPoint(sw);  
+            var str = "经纬度:左下角,右上角：" + sw.lng + "," + sw.lat + ";" + ne.lng + "," + ne.lat  
+                                                 + "<br/>墨卡托坐标:左下角,右上角：" + swMc.x + "," + swMc.y + ";" + neMc.x + "," + neMc.y;  
+            $('#result').html(str);  
+            console.log(bounds);  
+            map.setViewport(pointArray);    //调整视野                   
+        });     
+    }  
+    //getBoundary('北京');  
+</script>
