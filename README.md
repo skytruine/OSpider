@@ -27,12 +27,12 @@ OSpider是GPL协议下的开源桌面软件及python库，致力于提供便捷�
 
 ## 关于
 ### 开发团队
-OSpider项目由小O发起和负责，当前开发团队包括：
-**华盛顿大学HGIS Lab | 小O**
+OSpider项目由小O发起和负责，当前开发团队包括：<br>
+**华盛顿大学HGIS Lab | 小O**<br>
 **西南交通大学 | 苟强**
 
 ### 加入我们
-我们需要对POI、AOI、Land use、路网及其他GIS/规划相关数据获取及预处理有一定了解和实践经验，并希望为开源社区做贡献的开发者小伙伴-Talk is cheap. Show me the code. 如果你认为OSpider的文档编写、Web主页存在不足，且有能力进行改进，我也非常欢迎你的加入。有加入意向的小伙伴请发送邮件至sunyifan@uw.edu
+我们需要对POI、AOI、Land use、路网及其他GIS/规划相关数据获取及预处理有一定了解和实践经验，并希望为开源社区做贡献的开发者小伙伴-Talk is cheap. Show me the code. 如果你认为OSpider的文档编写、Web主页存在不足，且有能力进行改进，我们也非常欢迎你的加入。有加入意向的小伙伴请发送邮件至sunyifan@uw.edu
 
 ### Bug报告与意见反馈
 如果您在使用OSpider的过程中发现Bug或对OSpider的使用有什么意见或建议，请向ospider_org@163.com发送邮件我们收到邮件后会尽快回复。另外，非常欢迎加入OSpider用户群（QQ）: 939504570。
