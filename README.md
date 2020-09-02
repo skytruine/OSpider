@@ -4,25 +4,25 @@
 ## 尝鲜版本
 **暂无**
 ## 稳定版本
-[**OSpider_v3.0.0**](https://github.com/skytruine/OSpider/releases/download/OSpider_v3.0.0/OSpider.v3.0.0.zip) (Last Release)
-(**OSpider v3.0.0桌面版**)[https://github.com/skytruine/OSpider/releases/download/OSpider_v3.0.0/OSpider.v3.0.0.zip] 的核心功能为**按行政区划名称、矩形框、圆形区和自定义面文件**四种方式**抓取POI**(暂仅支持百度POI,高德POI将再下一次更新中加入)，支持通过csv批处理文件批量执行POI抓取任务,且提供了分城市获取POI总量的实用工具。OSpider v3.0.0也集成了**WGS84/BD09/GCJ02坐标互转**工具与**地址解析**工具。
+[**OSpider_v3.0.0**](https://github.com/skytruine/OSpider/releases/download/OSpider_v3.0.0/OSpider.v3.0.0.zip) (Last Release)<br>
+(**OSpider v3.0.0桌面版**)[https://github.com/skytruine/OSpider/releases/download/OSpider_v3.0.0/OSpider.v3.0.0.zip] 的核心功能为**按行政区划名称、矩形框、圆形区和自定义面文件**四种方式**抓取POI**(暂仅支持百度POI,高德POI将再下一次更新中加入)，支持通过csv批处理文件批量执行POI抓取任务,且提供了分城市获取POI总量的实用工具。OSpider v3.0.0也集成了**WGS84/BD09/GCJ02坐标互转**工具与**地址解析**工具。<br>
 
 (**OSpider v3.0.0源码**)[https://github.com/skytruine/OSpider/releases/download/OSpider_v3.0.0/OSpider_v3.0.0_code.zip]的功能模块包括POI抓取模块、坐标转换模块、行政区划获取模块、地址解析模块。
 
 ## 版本说明与下载链接
 - **20200901 | OSpider_v3.0.0** ([应用](https://github.com/skytruine/OSpider/releases/download/OSpider_v3.0.0/OSpider.v3.0.0.zip)|[源码](https://github.com/skytruine/OSpider/releases/download/OSpider_v3.0.0/OSpider_v3.0.0_code.zip))<br>
-修正内测阶段Bug:①修正key池耗尽后持续执行的重大Bug;②针对内置Key被快速消耗的问题，不再提供内置Key;③通过增加界面形状记忆，解决部分用户界面显示不全问题；④修正了部分异常处理增强稳定性；⑤修改批处理功能中的“中止”效果为立即中止；⑥为POI结果添加了额外属性；⑦为文件选择添加了类型限制
-*备用下载链接：*
-应用 | 链接：https://pan.baidu.com/s/1geZK0yWR5Wuc60fcCc5zKg 提取码：lyf5 
+修正内测阶段Bug:①修正key池耗尽后持续执行的重大Bug;②针对内置Key被快速消耗的问题，不再提供内置Key;③通过增加界面形状记忆，解决部分用户界面显示不全问题；④修正了部分异常处理增强稳定性；⑤修改批处理功能中的“中止”效果为立即中止；⑥为POI结果添加了额外属性；⑦为文件选择添加了类型限制<br>
+*备用下载链接：*<br>
+应用 | 链接：https://pan.baidu.com/s/1geZK0yWR5Wuc60fcCc5zKg 提取码：lyf5 <br>
 源码 | 链接：https://pan.baidu.com/s/1O4OFjl1KXMMku1TYd9J5Bg 提取码：7mqz
 - **20200822 | OSpider_v3.0.0_Beta** ([应用](https://github.com/skytruine/OSpider/releases/download/OSpider_v3.0.0-Beta/OSpider_v3.0.0_Beta.zip)|[源码](https://github.com/skytruine/OSpider/releases/download/OSpider_v3.0.0-Beta/OSpider_v3.0.0_Beta_Code.zip))<br>
-①提供6种模式抓取POI,预留高德接口;②针对百度高德的抽稀机制更改抓取算法为初始网格阈值四分递归；③引入Key池和多线程;④集成包括地址解析、坐标转换在内的多种功能；⑤重构GUI和所有代码，为发行python库做准备
-*备用下载链接：*
-应用 | 链接：https://pan.baidu.com/s/1Og-Q7B696mlviwyJNLRQsw 提取码：i2nf
+①提供6种模式抓取POI,预留高德接口;②针对百度高德的抽稀机制更改抓取算法为初始网格阈值四分递归；③引入Key池和多线程;④集成包括地址解析、坐标转换在内的多种功能；⑤重构GUI和所有代码，为发行python库做准备<br>
+*备用下载链接：*<br>
+应用 | 链接：https://pan.baidu.com/s/1Og-Q7B696mlviwyJNLRQsw 提取码：i2nf<br>
 源码 | 链接：https://pan.baidu.com/s/1ztHUMAgCbMRKo1bD_qE-3Q 提取码：1c6b
 - **20200615 | OSpider_v2.1.0** ([应用](https://github.com/skytruine/OSpider/releases/download/OSpider_v2.1.0/OSpider_v2.1.0.zip))<br>
-①修复部分内陆城市及沿海城市抓取失败Bug(数据模板不一致造成)②为抓取的POI添加了分类等属性；③修正了部分POI行政区划为空的Bug;④针对部分用户界面显示不全问题内置了单独修正版
-*备用下载链接：*
+①修复部分内陆城市及沿海城市抓取失败Bug(数据模板不一致造成)②为抓取的POI添加了分类等属性；③修正了部分POI行政区划为空的Bug;④针对部分用户界面显示不全问题内置了单独修正版<br>
+*备用下载链接：*<br>
 应用 | 链接：https://pan.baidu.com/s/1m4czR4NF6vClMGmzhyME4Q 提取码：ja3n
 - **20200319 | ExtraTools_v1.0.0** ([应用](https://skytruine.github.io/OSpider/))<br>
 独立桌面端辅助工具，内含坐标转换、地址解析功能
