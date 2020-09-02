@@ -5,9 +5,8 @@
 **暂无**
 ## 稳定版本
 [**OSpider_v3.0.0**](https://github.com/skytruine/OSpider/releases/download/OSpider_v3.0.0/OSpider.v3.0.0.zip) (Last Release)<br>
-[**OSpider v3.0.0桌面版**](https://github.com/skytruine/OSpider/releases/download/OSpider_v3.0.0/OSpider.v3.0.0.zip) 的核心功能为**按行政区划名称、矩形框、圆形区和自定义面文件**四种方式**抓取POI**(暂仅支持百度POI,高德POI将再下一次更新中加入)，支持通过csv批处理文件批量执行POI抓取任务,且提供了分城市获取POI总量的实用工具。OSpider v3.0.0也集成了**WGS84/BD09/GCJ02坐标互转**工具与**地址解析**工具。<br>
-
-[**OSpider v3.0.0源码**](https://github.com/skytruine/OSpider/releases/download/OSpider_v3.0.0/OSpider_v3.0.0_code.zip)的功能模块包括POI抓取模块、坐标转换模块、行政区划获取模块、地址解析模块。
+- [**OSpider v3.0.0桌面版**](https://github.com/skytruine/OSpider/releases/download/OSpider_v3.0.0/OSpider.v3.0.0.zip) 的核心功能为**按行政区划名称、矩形框、圆形区和自定义面文件**四种方式**抓取POI**(暂仅支持百度POI,高德POI将再下一次更新中加入)，支持通过csv批处理文件批量执行POI抓取任务,且提供了分城市获取POI总量的实用工具。OSpider v3.0.0也集成了**WGS84/BD09/GCJ02坐标互转**工具与**地址解析**工具。<br>
+- [**OSpider v3.0.0源码**](https://github.com/skytruine/OSpider/releases/download/OSpider_v3.0.0/OSpider_v3.0.0_code.zip)的功能模块包括POI抓取模块、坐标转换模块、行政区划获取模块、地址解析模块。
 
 ## 版本说明与下载链接
 - **20200901 | OSpider_v3.0.0** ([应用](https://github.com/skytruine/OSpider/releases/download/OSpider_v3.0.0/OSpider.v3.0.0.zip)|[源码](https://github.com/skytruine/OSpider/releases/download/OSpider_v3.0.0/OSpider_v3.0.0_code.zip))<br>
