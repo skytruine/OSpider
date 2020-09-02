@@ -1,0 +1,5 @@
+﻿id,query,tag,region,grid_num,threshold,thread_num,outFilePath
+1,KTV,,https://geo.datav.aliyun.com/areas_v2/bound/350100.json,4,100,2,福州市_KTV.csv
+2,高中,中学,118.351915;29.192178;120.724682;30.569969,4,100,2,西安外接矩形_高中.shp
+3,咖啡厅,,121.480248;31.236276;3000,4,100,2,上海市政府周边3km_咖啡厅.json
+4,酒吧,酒吧,广州,4,100,2,广州市_酒吧.txt
